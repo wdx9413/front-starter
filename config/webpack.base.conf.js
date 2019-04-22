@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, '../build'),
         filename: 'js/[name].js'
     },
-    module: { 
+    module: {
         rules: [
             {
                 test: /\.css$/,
@@ -21,7 +21,14 @@ module.exports = {
                 ]
             },
             {
-                test: /\.js$/,
+                test: /\.scss$/,
+                use: [
+                    // 'css-loader',
+                    // 'sass-loader'
+                ]
+            },
+            {
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'

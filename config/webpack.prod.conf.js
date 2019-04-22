@@ -13,6 +13,14 @@ module.exports = merge(baseWebpackConf, {
                     'css-loader'
                 ]
             },
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
         ]
     },
     plugins: [
