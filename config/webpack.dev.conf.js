@@ -8,8 +8,10 @@ module.exports = merge(baseWebpackConf, {
     devServer: {
         contentBase: '../build',
         host: 'localhost',
-        compress: true,
-        port: 3000
+        port: 3000,
+        inline: true,
+        hot: true,
+        historyApiFallback: true,
     },
     performance: {
         hints: false
