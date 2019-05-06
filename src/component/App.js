@@ -7,11 +7,11 @@ const App = () => {
     return (
         <Router>
             <Link to='/1'>first</Link>
-            <div>
+            <div className='app'>
                 app
-                <Route path='/1' component={First}></Route>
-                <Route path='/2' component={Second}></Route>
             </div>
+            <Route path='/1' component={First}></Route>
+            <Route path='/2' component={Second}></Route>
         </Router>
         
     );

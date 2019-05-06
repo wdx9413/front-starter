@@ -1,7 +1,7 @@
 {
-  "name": "shop-page",
+  "name": "react",
   "version": "1.0.0",
-  "description": "shop front page",
+  "description": "react starter",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --config config/webpack.dev.conf.js --mode production --module-bind js=babel-loader",
@@ -22,12 +22,11 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
-    "react-route": "^1.0.3",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
     "sass-loader": "^7.1.0",
