@@ -18,7 +18,12 @@ module.exports = merge(baseWebpackConf, {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            implementation: require("sass")
+                        }
+                    }
                 ]
             },
         ]
